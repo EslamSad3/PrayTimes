@@ -57,14 +57,13 @@ function Content() {
   async function prayTime() {
     try {
       const respone = await axios.get(
-        `http://api.aladhan.com/v1/timingsByCity?city=${city.apiName}&country=${country}`
+        `https://api.aladhan.com/v1/timingsByCity?city=${city.apiName}&country=${country}`
       );
       console.log(respone);
       setTime(respone?.data?.data?.timings);
     } catch (error) {
       console.log(error);
     }
-    // setDate(respone?.data?.data?.date?.readable);
   }
   useEffect(() => {
     prayTime();
