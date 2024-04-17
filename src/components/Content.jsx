@@ -13,7 +13,7 @@ function Content() {
     displayName: "مكه",
     apiName: "makkah",
   });
-  const [country, setcountry] = useState("Saudi Arabia");
+  const [country, setcountry] = useState("SA");
   const [time, setTime] = useState("");
   const [datestring, setdatestring] = useState("");
 
@@ -32,17 +32,17 @@ function Content() {
     {
       displayName: "مكه",
       apiName: "makkah",
-      country: "Saudi Arabia",
+      country: "SA",
     },
     {
       displayName: "المدينه",
       apiName: "Madinah",
-      country: "Saudi Arabia",
+      country: "SA",
     },
     {
       displayName: "القاهره",
       apiName: "cairo",
-      country: "egypt",
+      country: "EG",
     },
   ];
 
